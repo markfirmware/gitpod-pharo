@@ -2,6 +2,8 @@ image:
   file: pharo.dockerfile
 
 ports:
+  - port: 4000           # pharo language server
+    onOpen: ignore
   - port: 5900           # standard vnc viewer - not used in this repo
     onOpen: ignore
   - port: 6080
@@ -11,3 +13,7 @@ tasks:
   - name: pharo
     init: ./get-pharo.sh
     command: HOME=$(pwd) ./pharolauncher/pharo-launcher
+
+vscode:
+  extensions:
+    - badetitou.pharo-language-server@0.0.7:OW5PdTkSTcQHDTeJzYEG/w==

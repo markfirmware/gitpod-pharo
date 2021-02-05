@@ -1,7 +1,8 @@
 # gitpod-pharo
 
-Add the gitpod extension to your browser, then press the gitpod button when viewing this repository.
-A gitpod workspace will open including theia (similar to vscode) and also a novnc brrowser window to
+[(This link will open markfirmware/gitpod-pharo in gitpod.)](https://gitpod.io#https://github.com/markfirmware/gitpod-pharo)
+
+A gitpod workspace will open including theia (similar to vscode) and also a novnc browser window to
 the gitpod workspace where the pharo launcher will be running.
 
 ## Explanation
@@ -11,16 +12,10 @@ is a graphics issue running gtoolkit in gitpod related to Skia and/or glutin.
 
 Therefore this repo is a step away from gtoolkit and is using pharo 9.0 for development in the mean time.
 
-Gitpod is a theia/vscode virtual development environment.
+Gitpod is a theia/vscode virtual development environment,
+therefore [VSCode-Pharo](https://badetitou.github.io/projects/VSCode-Pharo/)
+is installed.
 
-The goal for this repo is to implement and demonstrate vscode supoort for smalltalk scripting:
-
-1. (Possibly) a self-contained vscode extension for smalltalk syntax. This necessarily would be implemented in typescript
-2. A vscode client using lsp (language server protocol) to get syntax errors and code completions from a running pharo vm
-3. Some way of transmitting smalltalk files and selections for execution in the vm and returning the output
-
-**Pharo provides code completion natively in its environment. If there is already some kind of external repl client,
-telnet even, that has code completion then please open an issue and inform me to prevent duplicated effort.**
 
 ### Notes
 
