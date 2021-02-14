@@ -1,5 +1,5 @@
 image:
-  file: pharo.dockerfile
+  file: .gitpod.Dockerfile
 
 ports:
   - port: 4000           # pharo language server
@@ -12,7 +12,6 @@ ports:
 tasks:
   - name: pharo
     init: ./get-pharo.sh
-    command: HOME=$(pwd) ./pharolauncher/pharo-launcher
 
 vscode:
   extensions:

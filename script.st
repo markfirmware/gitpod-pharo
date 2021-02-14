@@ -1,5 +1,11 @@
 1 + 1
 
+ZnHtmlOutputStream streamContents: [ :html |
+  html tag: #html do:  [  html tag: #div with: 'testing'].
+]
+
+(ZnServer defaultOn: 1701) start
+
 Metacello new
 	baseline: 'JRPC';
 	repository: 'github://juliendelplanque/JRPC:master/src';

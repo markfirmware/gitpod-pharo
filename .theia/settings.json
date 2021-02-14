@@ -1,5 +1,5 @@
 {
     "editor.autoSave": "on",
-    "pharo.pathToVM": "/workspace/gitpod-pharo/Pharo/vms/90-x64/pharo",
-    "pharo.pathToImage": "/workspace/gitpod-pharo/Pharo/images/pharo-language-server/pharo-language-server.image"
+    "pharo.pathToVM": "/workspace/gitpod-pharo/pharo/pharo",
+    "pharo.pathToImage": "/workspace/gitpod-pharo/pharo/Pharo64-9.0-PLS.image"
 }

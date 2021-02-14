@@ -1,5 +1,6 @@
 *.swp
 /.config/
 /github.com/
+/pharo/
 /Pharo/
 /pharolauncher/
