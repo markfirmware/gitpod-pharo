@@ -1,17 +1,16 @@
-image:
-  file: pharo.dockerfile
+image: gitpod/workspace-full-vnc
 
 ports:
   - port: 4000           # pharo language server
     onOpen: ignore
   - port: 5900           # standard vnc viewer - not used in this repo
     onOpen: ignore
-  - port: 6080
-    onOpen: open-browser # novnc viewer to workspace desktop
+  - port: 6080           # novnc viewer to workspace desktop
+    onOpen: open-browser
 
 tasks:
   - name: pharo
-    init: ./get-pharo.sh
+    init: ./get-pharo-launcher.sh
     command: HOME=$(pwd) ./pharolauncher/pharo-launcher
 
 vscode:
